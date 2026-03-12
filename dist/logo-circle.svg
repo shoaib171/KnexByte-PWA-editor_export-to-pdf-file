@@ -1,0 +1,24 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="256" cy="256" r="256" fill="#00334E" />
+  {/* Circles on the left */}
+  <circle cx="120" cy="180" r="32" fill="white" />
+  <circle cx="120" cy="332" r="32" fill="white" />
+  
+  {/* K-Bracket (white) */}
+  <path 
+    d="M280 140L180 256L280 372" 
+    stroke="white" 
+    strokeWidth="54" 
+    strokeLinecap="round" 
+    strokeLinejoin="round" 
+  />
+  
+  {/* B-Symbol (blue) */}
+  <path 
+    d="M310 140C380 140 420 180 420 230C420 270 390 310 330 310M310 372C380 372 420 332 420 282C420 262 390 242 330 242" 
+    stroke="#00AEEF" 
+    strokeWidth="54" 
+    strokeLinecap="round" 
+    strokeLinejoin="round" 
+  />
+</svg>
