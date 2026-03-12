@@ -10,7 +10,7 @@
 - **Developer Ready**: Built-in support for code blocks with syntax highlighting and table insertion.
 - **Document Management**: Manage multiple local documents via a clean, intuitive sidebar.
 - **Offline Capable (PWA)**: Install it as a desktop or mobile application and work offline.
-- **One-Click Export**: Export your documents to high-quality HTML files instantly.
+- **One-Click Export**: Export your documents to pdf.
 
 ## 🤖 Upcoming AI Integration (Roadmap)
 
@@ -24,7 +24,7 @@ We are currently working on deep AI integration to make KnexByte the smartest ed
 
 - **Core**: React 18 + TypeScript
 - **Build Tool**: Vite
-- **Styling**: Modern CSS with CSS Variables
+- **Styling**: Modern CSS with CSS Variables and tailwindcss
 - **PWA Engine**: `vite-plugin-pwa`
 - **Icons**: Lucide React
 
@@ -58,8 +58,4 @@ To create a production-ready build:
 npm run build
 ```
 
-## 📜 License
-This project is for internal use by KnexByte Systems. All rights reserved.
 
----
-*Built with ❤️ by KnexByte Systems*
