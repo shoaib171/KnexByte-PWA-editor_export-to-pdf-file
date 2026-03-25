@@ -1,4 +1,4 @@
-import React from 'react';
+import { memo } from 'react';
 import { SaveStatus } from '../types';
 
 interface StatusBarProps {
@@ -7,20 +7,18 @@ interface StatusBarProps {
   saveStatus: SaveStatus;
 }
 
-const StatusBar = ({ wordCount, charCount, saveStatus }: StatusBarProps): React.JSX.Element => {
+const StatusBar = memo(({ wordCount, charCount, saveStatus }: StatusBarProps) => {
   return (
     <div style={{
       height: 26, background: "var(--kb-sidebar)", borderTop: "1px solid var(--kb-border)",
-      display: "flex", alignItems: "center", padding: "0 16px", gap: 16,
-      flexShrink: 0
+      display: "flex", alignItems: "center", padding: "0 16px", gap: 16, flexShrink: 0
     }}>
       <span style={{ fontSize: 10.5, color: "var(--kb-text-muted)", opacity: 0.6, fontFamily: "'DM Mono',monospace" }}>{wordCount} words</span>
       <span style={{ fontSize: 10.5, color: "var(--kb-text-muted)", opacity: 0.6, fontFamily: "'DM Mono',monospace" }}>{charCount} chars</span>
-      <span style={{ 
-        fontSize: 10.5, 
-        color: saveStatus === "saved" ? "var(--kb-success)" : "var(--kb-warning)", 
-        fontFamily: "'DM Mono',monospace",
-        display: "flex", alignItems: "center", gap: 4
+      <span style={{
+        fontSize: 10.5,
+        color: saveStatus === "saved" ? "var(--kb-success)" : "var(--kb-warning)",
+        fontFamily: "'DM Mono',monospace", display: "flex", alignItems: "center", gap: 4
       }}>
         <span style={{ width: 6, height: 6, borderRadius: "50%", background: "currentColor" }} />
         {saveStatus === "saved" ? "Saved" : "Unsaved"}
@@ -30,6 +28,6 @@ const StatusBar = ({ wordCount, charCount, saveStatus }: StatusBarProps): React.
       </span>
     </div>
   );
-};
+});
 
 export default StatusBar;
